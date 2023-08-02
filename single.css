@@ -1,0 +1,137 @@
+/* FONT OF LETTERS (google) ⬇ */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* GENERAL ADJUSTMENTS ⬇ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+}
+/* HTML SETTINGS ⬇ */
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #e6eff6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+/* MAIN CONTAINER ⬇ */
+.single-container_grid {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(346px, 500px));
+  grid-template-rows: repeat(2, 260px);
+  margin: 0 auto;
+  /* padding: 1rem ; */
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 20px 2px rgba(0,0,0,0.21);
+  -moz-box-shadow: 1px 1px 20px 2px rgba(0,0,0,0.21);
+  box-shadow: 1px 1px 20px 2px rgba(0,0,0,0.21);
+  
+
+}
+/* container to join ⬇  */
+.single-container_grid .join-container {
+  background-color: #ffff;
+  padding: 4rem 3rem 2rem 4rem;
+  grid-area: 1/ 1/ 1/ 3;
+  width: 100%;
+}
+.single-container_grid .join-container h1 {
+  color: #46b0ad;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.single-container_grid .join-container .joinP-1 {
+  color: #c6d963;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.single-container_grid .join-container .joinP-2 {
+  color: #d8c9c9;
+  font-size: 1.9rem;
+  width: 93%;
+}
+/* subscription container⬇  */
+.subscription-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem 2rem 4rem;
+    background-color: #2bb3b1; 
+}
+.subscription-container h1{
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.subscription-container .subcription-page{
+    display: flex;
+    gap: 1rem;
+
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+.subscription-container .subcription-page h2{
+   font-size: 4rem;
+   font-weight: 400;
+}
+.subscription-container .subcription-page p{
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+.subscription-container p{
+color: white;
+font-size: 1.7rem;
+font-weight: 300;
+}
+.subscription-container  a{
+color: white;
+background-color: #bfdf32;
+border-radius: .5rem;
+padding: 1rem;
+margin-top: 2rem;
+text-align: center;
+font-size: 1.8rem;
+transition: .3s;
+}
+.subscription-container  a:hover{
+    transition: .3s;
+    transform: scale(1.1);
+}
+/* why container⬇  */
+.why-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem 2rem 4rem;
+    background-color: #4abebd; 
+    color: white;
+}
+.why-container h1{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.why-container  ul li{
+  margin: .2rem 0;
+  font-size: 1.3rem;
+}
+@media (max-width: 844px) {
+    .single-container_grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+    grid-template-rows: auto;
+    }
+    .single-container_grid .join-container{
+        grid-area: auto;
+    }
+}
